@@ -1,0 +1,266 @@
+.dropdown {
+  position: absolute;
+  /* top: 70px; Adjust as needed to align with the navbar */
+  right: 10px;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  background-color: #333;
+  display: none;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-toggle:hover + .dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
+}
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the dropdown toggle (link) */
+.dropdown-toggle {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #fff; /* Background color for the button */
+  border: 3px solid #13b3ac; /* Border color */
+  border-radius: 5px; /* Border radius */
+  text-decoration: none;
+  color: #333; /* Text color */
+  text-align: left;
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 174px;
+  background-color: white; /* Background color for the dropdown menu */
+  border: 1px solid #13b3ac; /* Border color */
+  border-top: none; /* Remove top border to avoid double border */
+  border-radius: 0 0 5px 5px; /* Border radius */
+  display: none;
+  z-index: 1000;
+  text-align: left; /* Ensure dropdown is on top of other content */
+}
+
+/* Style for dropdown items */
+.dropdown-menu li {
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.dropdown-menu li a {
+  color: #333; /* Text color */
+  text-decoration: none;
+  display: block;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Rotate arrow when dropdown is active */
+.dropdown-toggle.active::after {
+  content: '\25B2'; /* Upward-pointing triangle */
+  float: right;
+  margin-left: 5px; /* Adjust spacing between text and arrow */
+  transform: rotate(180deg); /* Rotate arrow */
+}
+
+/* Style for icon before "Sort by" text */
+.sort-icon {
+  font-size: 18px; /* Adjust size as needed */
+  margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+.horizontal-section {
+  display: flex; /* Use flexbox to arrange items horizontally */
+  align-items: center; /* Align items vertically */
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  min-height: 305px;
+  background-color: #f0f0f0;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  padding: 20px;
+}
+.image {
+  flex: 0 0 calc(25% - 5px); /* Take up remaining space */
+  padding: 20px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+.image img {
+  max-width: 150%;
+  height: 270px;
+  display: block;
+  border-radius: 15px;
+}
+
+.buttons {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 170px;
+}
+.top-button {
+  width: 410px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: #13b3ac;
+  font-family: serif;
+}
+.button-group {
+  display: flex;
+}
+.top-button a {
+  color: white; /* Set the color to white */
+  text-decoration: none; /* Remove underline */
+}
+.button-group button,
+.button-group .btn-action {
+  color: white;
+  width: 200px;
+  height: 50px;
+  background-color: #13b3ac;
+  font-size: 20px;
+  font-family: serif;
+}
+.button-group button:first-child,
+.button-group .btn-action:first-child {
+  margin-right: 7.5px;
+  margin-left: auto;
+}
+.top-button:first-child {
+  margin-left: auto;
+}
+.buttons button a {
+  color: #fff;
+}
+.buttons button,
+.buttons .btn-action {
+  text-align: center;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.buttons button:hover,
+.buttons .btn-action:hover {
+  background-color: #085652;
+}
+.content {
+  margin-left: 100px;
+  margin-bottom: 40px;
+  font-size: large;
+  color: black;
+}
+h1 {
+  margin-bottom: 10px;
+}
+.icon {
+  display: flex;
+  gap: 20px;
+}
+
+.icon img {
+  width: 30px; /* Adjust as needed */
+  height: auto;
+  /* cursor: pointer; */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.icon img:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+.icon img:hover::after {
+  content: attr(title); /* Display text on hover */
+  position: absolute;
+  bottom: -120px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white; /* White background */
+  color: black; /* Black text color */
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  /* white-space: nowrap; */
+}
+.text {
+  font-size: 20px;
+  justify-content: space-between;
+}
+/* .wishlist{
+  margin-right: 5px;
+  margin-top: 5px;
+} */
+.wishlist {
+  position: absolute; /* Set the wishlist container to absolute positioning */
+  top: 10px; /* Align the wishlist container to the top */
+  right: 10px; /* Align the wishlist container to the right */
+}
+.horizontal-section {
+  position: relative; /* Set the parent element to relative positioning */
+}
+.wishlist img:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
+.Money {
+  position: absolute; /* Set the wishlist container to absolute positioning */
+  top: 40px; /* Align the wishlist container to the top */
+  right: 30px; /* Align the wishlist container to the right */
+  font-size: 25px;
+  color: #000;
+}
+
+body {
+  padding-top: 100px;
+}
+
+.buttons .btn-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}

@@ -1,0 +1,48 @@
+{
+  "name": "travelin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-ready travel planning website.",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "validate": "node scripts/validate-site.js",
+    "build": "npm run validate",
+    "test": "npm run lint && npm run typecheck && npm run build",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit --project jsconfig.json",
+    "security": "npm audit --audit-level=moderate",
+    "prepare": "husky",
+    "format": "prettier --write \"**/*.{js,css,html,json,md}\"",
+    "dev:server": "nodemon server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "compression": "^1.8.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "envalid": "^8.2.0",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.5.2",
+    "helmet": "^8.2.0",
+    "morgan": "^1.11.0",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.9.3",
+    "eslint": "^10.5.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.4",
+    "typescript": "^6.0.3"
+  },
+  "lint-staged": {
+    "**/*.{js,css,html,json,md}": [
+      "prettier --write"
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --text-color: #fff;
+  --bg-color: #000;
+  --main-color: #13b3ac;
+  --h1-font: 6rem;
+  --h2-font: 3rem;
+  --p-font: 1rem;
+}
+
+body {
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: transparent;
+  padding: 5px 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  background-color: #fff;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  font-size: 33px;
+  color: #136b66;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--main-color);
+}
+
+.navbar {
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+
+.navbar a {
+  color: var(--main-color);
+  font-size: var(--p-font);
+  font-weight: 500;
+  margin: 15px 22px;
+  transition: all 0.5s ease;
+}
+
+.navbar a:hover {
+  color: #136b66;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info,
+.about-us,
+.social-media {
+  flex: 1;
+  max-width: 300px;
+  padding: 0 10px;
+}
+
+.contact-info h3,
+.about-us h3,
+.social-media h3 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.contact-info p,
+.about-us p,
+.social-media p {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.social-media a:hover {
+  color: var(--main-color);
+}
+
+/* Common Icons */
+.social-icon-fb,
+.social-icon-tw,
+.social-icon-ig {
+  display: inline-block;
+  background-size: contain;
+  margin-right: 5px;
+}
+
+/* Base sizes for social icons */
+.social-icon-fb {
+  background: url('../assets/icons/facebook-fill.svg') no-repeat center center;
+  width: 24px;
+  height: 24px;
+}
+.social-icon-tw {
+  background: url('../assets/icons/twitter-fill.svg') no-repeat center center;
+  width: 24px;
+  height: 24px;
+}
+.social-icon-ig {
+  background: url('../assets/icons/instagram-fill.svg') no-repeat center center;
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  header {
+    position: static;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar a {
+    margin: 8px 10px;
+  }
+}

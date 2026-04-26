@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #136b66;
+  font-weight: 700;
+}
+
+span {
+  color: #13b3ac;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  margin: auto;
+  margin-top: 225px;
+}
+
+.demo-notice {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.navbar {
+  display: flex;
+  height: 100%;
+}
+
+.navbar a {
+  color: #13b3ac;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 15px;
+  text-decoration: none;
+  transition:
+    color 0.5s ease,
+    border-bottom 0.5s ease;
+}
+
+.navbar a:hover {
+  color: #136b66;
+}
+
+#login-form,
+#signup-form {
+  display: block;
+}
+
+#signup-form {
+  display: none;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.toggle-form {
+  margin-top: 10px;
+  cursor: pointer;
+  color: #007bff;
+  background: none;
+  border: none;
+  width: auto;
+  padding: 0;
+  font-size: inherit;
+}

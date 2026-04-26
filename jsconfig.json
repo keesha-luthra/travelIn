@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs",
+    "lib": ["dom", "dom.iterable", "es2022"],
+    "checkJs": true,
+    "allowJs": true,
+    "noEmit": true,
+    "strict": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "maxNodeModuleJsDepth": 0
+  },
+  "include": ["src/**/*.js", "scripts/**/*.js", "public/js/**/*.js", "server.js"],
+  "exclude": ["node_modules", "**/node_modules/*"]
+}
